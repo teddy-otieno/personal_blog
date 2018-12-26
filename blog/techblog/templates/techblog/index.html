@@ -13,9 +13,10 @@
         <link href='{% static "techblog/css/bootstrap-4.2.1/dist/css/bootstrap.min.css" %}' rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 		<link href='{% static "techblog/css/blog.css"%}' rel="stylesheet">
+		<script src={% static "techblog/js/index.js" %}></script>
 	   </head>
 		
-	   <body>
+	   <body onload="loadContent()">
 		   <div class="container">
 			   <header class="blog-header py-3">
 				   <div class="row flex-nowrap justify-content-between align-items-center">
@@ -24,7 +25,7 @@
 					   <div class="col-4 d-flex justify-content-end align-items-center"><a href = "#" class="text-muted" >Login</a></div>
 				   </div>
 				</header>
-			   <div class="container py-2">
+			   <div class="nav-scroller container py-2 mb-2">
 				   <nav class="nav d-flex justify-content-center-between">
 					   <a class="p-2 text-muted" href="#">World</a>
 					   <a class="p-2 text-muted" href="#">Kenya</a>
@@ -39,6 +40,12 @@
 					   <a class="p-2 text-muted" href="#">Style</a>
 					   <a class="p-2 text-muted" href="#">Travel</a>
 				   </nav>
+			   </div>
+		   </div>
+
+		   <div class="container jumbotron p-3 p-md-5 text-while rounded bg-dark">
+			   <div class="col-md-6 px-0" id="featured-post">
+
 			   </div>
 		   </div>
    </body>
